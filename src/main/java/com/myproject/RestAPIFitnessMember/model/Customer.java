@@ -20,10 +20,10 @@ public class Customer {
     private int id;
     private String firstName;
     private String lastName;
-    private Enum gender;
+    private String gender;
     private String email;
     private String phone;
-    private Date birthDate;
+    private String birthDate;
     private String address;
     private float weight;
     private float height;
@@ -32,7 +32,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(int id, String firstName, String lastName, Enum gender, String email, String phone, Date birthDate, String address, float weight, float height, LocalDateTime registrationDate) {
+    public Customer(int id, String firstName, String lastName, String gender, String email, String phone, String birthDate, String address, float weight, float height, LocalDateTime registrationDate) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -71,11 +71,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public Enum getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Enum gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -95,11 +95,11 @@ public class Customer {
         this.phone = phone;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
